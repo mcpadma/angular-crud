@@ -1,0 +1,13 @@
+<div>
+  <div class="example-card" *ngFor="let user of searchResult">
+    <!-- <a [routerLink]=" ['./details'] " > -->
+    <a>
+      <li (click)="handleClick(user.id)">{{ user.login }}
+
+      </li>
+    </a>
+    <!-- </a> -->
+  </div>
+  <app-details [userId]="selectedUser"></app-details>
+  <!-- <a [routerLink]=" ['./details'] ">details</a> -->
+</div>
